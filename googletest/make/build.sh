@@ -9,6 +9,10 @@
 # 
 ########################################################################
 
+echo -e "\033[31m mkdir obj \033[0m"
+mkdir obj 
+echo -e "\033[31m mkdir bin   \033[0m"
+mkdir bin
 echo -e "\033[31m make \033[0m" "\033[32m [BEGIN] \033[0m"
 make -j8
 echo -e "\033[31m make \033[0m" "\033[32m [END] \033[0m"
