@@ -29,6 +29,15 @@ TEST(STRTEST,Test1)
     std::string str_1 = "hello";
     std::string str_2(str_1);
     EXPECT_EQ(str_1, str_2);
+    EXPECT_STREQ(str_1.c_str(), str_2.c_str());
+}
+
+TEST(STRTEST,Test2)
+{
+    std::string str_1 = "hello";
+    std::string str_2 = "world";
+    EXPECT_EQ(str_1, str_2);
+    EXPECT_STREQ(str_1.c_str(), str_2.c_str());
 }
 
 int main(int argc, char **argv)
