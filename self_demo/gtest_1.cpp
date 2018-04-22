@@ -21,5 +21,18 @@ int func_1(int a, int b, int c, int d)
 
 TEST(func_1Test, Test1)
 {
-    EXPECT_EQ(3, func_1(4,3,2,1));
+    EXPECT_EQ(2, func_1(4,3,2,1));
+}
+
+TEST(STRTEST,Test1)
+{
+    std::string str_1 = "hello";
+    std::string str_2(str_1);
+    EXPECT_EQ(str_1, str_2);
+}
+
+int main(int argc, char **argv)
+{
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
