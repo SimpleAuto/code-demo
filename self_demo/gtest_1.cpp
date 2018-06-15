@@ -21,7 +21,7 @@ int func_1(int a, int b, int c, int d)
 
 TEST(func_1Test, Test1)
 {
-    EXPECT_EQ(2, func_1(4,3,2,1));
+    EXPECT_EQ(3, func_1(4,3,2,1));
 }
 
 TEST(STRTEST,Test1)

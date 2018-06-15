@@ -7,7 +7,6 @@ GTEST_API_ int main(int argc, char **argv) {
     return  RUN_ALL_TESTS();
 }
 ### GTEST_API_的说明
-``` c++
 #ifndef GTEST_API_
 
 #ifdef _MSC_VER
@@ -42,5 +41,4 @@ GTEST_API_ int main(int argc, char **argv) {
 */
 // 具体的细节可以参考这篇 https://bbs.csdn.net/topics/330169671
 
-```
 ```

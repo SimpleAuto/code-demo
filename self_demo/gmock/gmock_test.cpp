@@ -93,11 +93,14 @@ TEST(GMOCK_TEST, uers)
     biz.SetUser(&test_user);
     string user_ret = biz.pay("user", "", 1);
     cout << "test4 ret value: " << user_ret << endl;
+
     user_ret = biz.pay("user", "", 1);
     cout << "test4 ret value: " << user_ret << endl;
-    //user_ret = biz.pay("admin", "", 1);
-    user_ret = biz.pay("admins", "", 1);
+
+    user_ret = biz.pay("admin", "", 1);
+    //user_ret = biz.pay("admins", "", 1);
     cout << "test4 ret value: " << user_ret << endl;
+
     user_ret = biz.pay("user", "", 1);
     cout << "test4 ret value: " << user_ret << endl;
 }
